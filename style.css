@@ -1,0 +1,138 @@
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 30vw;
+    grid-template-rows: repeat(3,10vh) 5vh repeat(2,10vh);
+    grid-gap: 10px;
+}
+
+.column{
+    display: block;
+    background-color:rgb(118, 118, 118, 0.6);
+    margin-top: 50%;
+    padding-top: 50%;
+    padding-bottom: 60%;
+    
+}
+
+.underweight{ 
+    background-color: rgb(94, 164, 229, 0.6); 
+}
+.healthy{ 
+    background-color: rgba(29, 232, 29, 0.6); 
+}
+.overweight{ 
+    background-color:rgb(255, 238, 6, 0.6); 
+}
+.obese{ 
+    background-color: rgb(255, 0, 0, 0.6); 
+}
+
+@media (max-width: 800px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .column{
+        padding-top: 25%; 
+        padding-bottom: 25%; 
+    }
+
+    footer {
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+body{
+   background: black;
+}
+
+h1{
+   text-align: center;
+   color: white;
+}
+
+.result{
+    display: none;
+    margin-top: 20px;
+}
+
+.submit{
+   background-color: rgb(224, 64, 187);
+}
+
+button{
+   width:200px;
+   height:50px;
+   align-items: center;
+   align-content: center;
+   border-radius: 8px;
+   background: #9e2c4c;
+   cursor: pointer;
+   align-items: center;
+   align-content: center;
+   color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+input{
+   background: white;
+   text-indent: 0.5em;
+   width: 250px;
+   height: 30px;
+   color: black;
+   outline: none;
+   margin-bottom: 10px;
+}
+
+select {
+    width: 50%;
+    padding: 5px;
+    color: grey;
+    margin-bottom: 10px;
+}
+   
+button:hover{
+   background: purple;
+   color: rgb(210, 231, 19);
+}
+
+.bgimg{
+    background-image: url("https://images.freeimages.com/clg/istock/previews/1011/101154613-abstract-background-of-triangles-polygon-wallpaper-web-design.jpg");
+    background-size: cover; 
+    height:125vh;
+}
+
+.text{
+    top: 50%;  
+    left: 50%;  
+    color:white;  
+    font-size: 20px;  
+    text-align:center;
+    align-items: center; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    animation: fadeIn 2s;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+

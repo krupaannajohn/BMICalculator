@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container bgimg text">  
+        <div class="column" id="resultCol">
+            <h1>BMI Calculator</h1>
+            <h6>Calculate your Body Mass Index</h6>
+            <label> Age:
+                <input id="age" type="number" placeholder="Enter Your Age: ">
+            </label><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="select">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            </label><br>
+            <label> Height:
+                <input id="height" type="number" placeholder="Enter Your Height (in Centimeters): ">
+            </label><br>  
+
+            <label> Weight:
+                <input id="weight" type="number" placeholder="Enter Your Weight (in Kilograms): ">
+            </label><br>          
+            <button type="submit" onclick="CalculateBMI()">Calculate BMI</button>
+            <hr>
+            <div id="result">
+                <p id="bmi-output"></p>
+                <p id="bmi-status"></p>
+            </div>
+        
+        </div>
+        
+    </div>
+    <footer>Made by Krupa</footer>
+
+    <script src="demo.js"></script>
+</body>
+</html>
